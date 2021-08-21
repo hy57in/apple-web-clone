@@ -50,6 +50,8 @@ a {
   font-size: 0.8rem;
 }
 .scroll-section {
+  max-width: 1000px;
+  margin: 0 auto;
   padding-top: 50vh;
 }
 #scroll-section-0 h1 {
@@ -123,7 +125,19 @@ a {
   color: white;
   background-color: #fdb489;
 }
-
+.sticky-elem {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem {
+  display: block;
+}
 @media (min-width: 1024px) {
   #scroll-section-0 h1 {
     font-size: 9vw;
